@@ -4,6 +4,12 @@ Compoonents:
 
 OpenFortiVPN: https://github.com/adrienverge/openfortivpn This is the stuff that creates the VPN connection. I used it instead of Fortinet's official client because it was more straightf  and easier for me to figure out.
 
+Issue for Openfortivpn that talks about the service: https://github.com/adrienverge/openfortivpn/issues/623
+
+Creating services: https://medium.com/@benmorel/creating-a-linux-service-with-systemd-611b5c8b91d6
+
+For a full list of configuration options, see manFor the full list of config options, see the CONFIGURATION section of man openfortivpn; there are probably a lot I haven't looked at.
+
 Configuraiton File: a file in this repo that contains parameters for openfortivpn.
 
 NOTE: This is currently using Steve's FortiNet account.
