@@ -1,0 +1,17 @@
+* system configuration file for the service
+# this should to into /usr/lib/systemd/system/openfortivepn@.service 
+
+[Unit]
+Description=OpenFortiVPN for %I
+After=network-online.target
+
+[Service]
+Type=simple
+PrivateTmp=true
+ExecStart=/usr/bin/openfortivpn -c /etc/openfortivpn/%I.conf
+OOMScoreAdjust=-100
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
